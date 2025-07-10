@@ -1,0 +1,14 @@
+/* Custom styles can be added here */
+
+/* Custom blockquote styling */
+.blockquote {
+  font-size: 1rem; /* Same as regular paragraph text */
+  border-left: 4px solid #dee2e6; /* Soft gray left border */
+  padding-left: 1rem; /* Space between border and text */
+  margin-left: 0; /* Remove default margin */
+  font-style: italic; /* Keep italic for distinction */
+}
+
+.blockquote p {
+  margin-bottom: 0; /* Remove bottom margin from paragraph inside blockquote */
+}
