@@ -1,14 +1,16 @@
 /* Custom styles can be added here */
 
-/* Custom blockquote styling */
-.blockquote {
-  font-size: 1rem; /* Same as regular paragraph text */
-  border-left: 4px solid #dee2e6; /* Soft gray left border */
-  padding-left: 1rem; /* Space between border and text */
-  margin-left: 0; /* Remove default margin */
-  font-style: italic; /* Keep italic for distinction */
+/* Custom blockquote styling - Higher specificity to override Bootstrap */
+.card-body .blockquote {
+  font-size: 1rem !important; /* Same as regular paragraph text */
+  border-left: 4px solid #dee2e6 !important; /* Soft gray left border */
+  padding-left: 1rem !important; /* Space between border and text */
+  margin-left: 0 !important; /* Remove default margin */
+  font-style: italic !important; /* Keep italic for distinction */
+  margin-bottom: 1rem !important; /* Consistent spacing */
 }
 
-.blockquote p {
-  margin-bottom: 0; /* Remove bottom margin from paragraph inside blockquote */
+.card-body .blockquote p {
+  margin-bottom: 0 !important; /* Remove bottom margin from paragraph inside blockquote */
+  font-size: 1rem !important; /* Ensure paragraph text is same size */
 }
